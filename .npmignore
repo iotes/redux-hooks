@@ -1,0 +1,10 @@
+.github
+.vscode
+src
+tests
+__tests__
+.eslintrc.js
+.eslintignore
+tsconfig.ts
+jest.config.js
+.bitbucket-piplines.yml
