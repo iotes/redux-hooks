@@ -117,8 +117,6 @@ describe('React Hooks ', () => {
 
     const newEventFromHook = JSON.parse(newComponent.children)
 
-    console.log(newEventFromHook)
-
     // Dynamically adjust to given test topology
     expect(
       Object.keys(newEventFromHook).filter((e) => {

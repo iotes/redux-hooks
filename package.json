@@ -1,7 +1,7 @@
 {
   "name": "@iotes/redux-hooks",
   "version": "0.0.0",
-  "description": "An iotes plugin that runs host messages through redux and device messages using hooks",
+  "description": "The iotes plugin that runs host messages through redux and device messages using hooks",
   "repository": "git://github.com/iotes/redux-hooks.git",
   "homepage": "https://iotes.dev",
   "main": "build/index.js",
@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "jest ./__tests__/*.test.ts"
+    "test": "jest ./__tests__/*.test.ts --force-exit"
   },
   "peerDependencies": {
     "react": "^16.8",

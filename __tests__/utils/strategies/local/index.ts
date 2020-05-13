@@ -74,7 +74,6 @@ const createDeviceFactory = async <StrategyConfig>(
 
     // Register listeners
     await setTimeout(() => {
-      console.log('dispatching ', name)
       deviceDispatch(
         createDeviceDispatchable(name, type, { value: Date.now() }),
       )
