@@ -1,5 +1,5 @@
 import {
-  createIotes,
+  createIotes as createIotesCore,
   Strategy,
   TopologyMap,
   Selector,
@@ -15,13 +15,13 @@ type Hook = (
 
 export type IotesReactReduxHook = [Hook, Redux.Middleware]
 
-export const createIotesReactReduxHook = (
+export const createIotes = (
   topology: TopologyMap<any, any>,
   strategy: Strategy<any, any>,
   reduxType: string = 'IOTES_HOST',
   busType?: string,
 ): IotesReactReduxHook => {
-  const iotes = createIotes({ topology, strategy })
+  const iotes = createIotesCore({ topology, strategy })
 
   const {
     hostDispatch, deviceDispatch, hostSubscribe, deviceSubscribe,
